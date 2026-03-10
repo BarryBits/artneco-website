@@ -1,0 +1,97 @@
+/* ============================================
+   ArtNecô v2 — Design Tokens
+   ============================================ */
+
+:root {
+  /* ── Brand Colors (from logo) ── */
+  --rose: #C8506B;
+  --rose-light: #E8849A;
+  --rose-glow: rgba(200, 80, 107, 0.15);
+  --blue: #7DB4D4;
+  --blue-light: #A8D1EA;
+  --green: #3A8B5C;
+  --green-light: #6BBF8A;
+  --orange: #E8944A;
+  --orange-light: #F0B87A;
+  --crimson: #A63D4E;
+  --pink: #D96B8A;
+
+  /* ── Surfaces ── */
+  --bg: #F5F2EE;
+  --bg-warm: #FAF7F2;
+  --bg-cream: #FFF9F0;
+  --bg-dark: #1A1A1E;
+  --bg-darker: #111114;
+  --bg-card: #FFFFFF;
+
+  /* ── Typography Colors ── */
+  --text: #1A1A1E;
+  --text-secondary: #4A454F;
+  --text-muted: #7A7580;
+  --text-light: #B8B4B0;
+  --text-on-dark: #F5F2EE;
+  --text-on-dark-secondary: #D0CCC6;
+  --text-on-dark-muted: #9A9498;
+
+  /* ── Borders ── */
+  --border: #E8E4DE;
+  --border-hover: #D0CCC6;
+  --border-dark: #2A2A2E;
+
+  /* ── Typography ── */
+  --font-display: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-accent: 'Cormorant', 'Georgia', serif;
+
+  /* Fluid Sizes */
+  --text-xs: clamp(0.7rem, 0.65rem + 0.2vw, 0.8rem);
+  --text-sm: clamp(0.85rem, 0.8rem + 0.2vw, 0.95rem);
+  --text-base: clamp(0.95rem, 0.9rem + 0.3vw, 1.1rem);
+  --text-lg: clamp(1.1rem, 1rem + 0.4vw, 1.3rem);
+  --text-xl: clamp(1.3rem, 1.1rem + 0.8vw, 1.8rem);
+  --text-2xl: clamp(1.8rem, 1.4rem + 1.5vw, 2.8rem);
+  --text-3xl: clamp(2.2rem, 1.6rem + 2.5vw, 3.8rem);
+  --text-4xl: clamp(2.8rem, 2rem + 3vw, 5rem);
+  --text-display: clamp(4rem, 2.5rem + 6vw, 10rem);
+
+  /* ── Spacing ── */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 8rem;
+  --space-section: clamp(5rem, 8vw, 8rem);
+
+  /* ── Layout ── */
+  --max-w: 1200px;
+  --max-w-narrow: 800px;
+  --max-w-wide: 1400px;
+  --side-padding: clamp(1.5rem, 4vw, 4rem);
+
+  /* ── Motion ── */
+  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --dur-fast: 0.2s;
+  --dur-base: 0.4s;
+  --dur-slow: 0.8s;
+  --dur-slower: 1.2s;
+
+  /* ── Radius ── */
+  --r-sm: 6px;
+  --r-md: 12px;
+  --r-lg: 20px;
+  --r-xl: 32px;
+  --r-full: 50%;
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 2px 8px rgba(26, 26, 30, 0.04);
+  --shadow-md: 0 4px 20px rgba(26, 26, 30, 0.07);
+  --shadow-lg: 0 8px 40px rgba(26, 26, 30, 0.1);
+  --shadow-xl: 0 20px 60px rgba(26, 26, 30, 0.12);
+  --shadow-rose: 0 8px 30px rgba(200, 80, 107, 0.2);
+}

@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="ArtNecô Studio de Design — Marketing artesanal para marcas que merecem mais. Máximo de 6 clientes simultâneos.">
+  <meta name="author" content="ArtNecô Studio de Design">
+  <meta property="og:title" content="ArtNecô — Studio de Design">
+  <meta property="og:description"
+    content="Marketing artesanal para marcas que merecem mais. Atendemos poucos. Entregamos arte.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./logoart.jpg">
+  <title>ArtNecô — Studio de Design</title>
+  <link rel="icon" type="image/jpeg" href="./logoart.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <img src="./logoart.jpg" alt="ArtNecô" class="preloader__logo">
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#/" class="nav__logo-link" data-link>
+        <img src="./logoart.jpg" alt="ArtNecô" class="nav__logo">
+      </a>
+      <ul class="nav__links">
+        <li><a href="#/" class="nav__link" data-link>Início</a></li>
+        <li><a href="#/sobre" class="nav__link" data-link>Sobre</a></li>
+        <li><a href="#/servicos" class="nav__link" data-link>Serviços</a></li>
+        <li><a href="#/portfolio" class="nav__link" data-link>Portfólio</a></li>
+        <li><a href="#/contato" class="nav__link" data-link>Contato</a></li>
+      </ul>
+      <a href="#/contato" class="btn btn--primary btn--sm nav__cta" data-link>Fale Conosco</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#/" class="mobile-menu__link" data-link data-close-menu>Início</a>
+    <a href="#/sobre" class="mobile-menu__link" data-link data-close-menu>Sobre</a>
+    <a href="#/servicos" class="mobile-menu__link" data-link data-close-menu>Serviços</a>
+    <a href="#/portfolio" class="mobile-menu__link" data-link data-close-menu>Portfólio</a>
+    <a href="#/contato" class="mobile-menu__link" data-link data-close-menu>Contato</a>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       PAGE: HOME
+       ══════════════════════════════════════════════════════ -->
+  <main class="page" id="page-home" data-page="home">
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="heroCanvas"></canvas>
+      <div class="hero__dot hero__dot--1"></div>
+      <div class="hero__dot hero__dot--2"></div>
+      <div class="hero__dot hero__dot--3"></div>
+      <div class="hero__dot hero__dot--4"></div>
+      <div class="hero__dot hero__dot--5"></div>
+      <div class="hero__content">
+        <img src="./logoart.jpg" alt="ArtNecô Studio de Design" class="hero__logo">
+        <h1 class="hero__tagline">
+          Sua marca merece ser tratada<br>como <em>obra de arte</em>.
+        </h1>
+        <p class="hero__subtitle">
+          Marketing artesanal para marcas que merecem mais do que templates e estratégias genéricas.
+        </p>
+        <div class="hero__cta">
+          <a href="#/sobre" class="btn btn--primary" data-link>Conheça a ArtNecô</a>
+          <a href="#/contato" class="btn btn--outline" data-link>Fale Conosco</a>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span class="hero__scroll-text">Descubra</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Manifesto -->
+    <section class="manifesto section">
+      <div class="manifesto__inner">
+        <div class="divider divider--center reveal"></div>
+        <p class="manifesto__text reveal">
+          Enquanto agências tradicionais atendem dezenas de clientes com templates prontos,
+          nós escolhemos um caminho diferente: <em>poucos clientes, dedicação total</em>.
+          Cada peça, cada campanha, cada publicação é pensada, criada e executada
+          artesanalmente para você.
+        </p>
+        <p class="manifesto__subtext reveal">
+          A ArtNecô nasceu da visão de que marketing de verdade não se faz em escala —
+          se faz com cuidado, atenção e arte.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview section section--warm">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="label">O Que Fazemos</p>
+          <h2 class="section-header__title">Tudo que sua marca precisa, feito sob medida</h2>
+        </div>
+        <div class="services-preview__grid stagger">
+          <div class="card services-preview__card">
+            <div class="card__accent" style="background:var(--rose)"></div>
+            <div class="services-preview__card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l3 3 5-5" />
+              </svg>
+            </div>
+            <h3 class="card__title">Conteúdo & Criação</h3>
+            <p class="card__text">Captação, edição e criação de conteúdo visual que representa a essência da sua marca.
+            </p>
+          </div>
+          <div class="card services-preview__card">
+            <div class="card__accent" style="background:var(--blue)"></div>
+            <div class="services-preview__card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 21l4-4m0 0l3-3m-3 3l-3-3m3 3l3 3M21 3l-4 4m0 0l-3 3m3-3l3 3m-3-3l-3-3" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </div>
+            <h3 class="card__title">Estratégia & Tráfego</h3>
+            <p class="card__text">Tráfego pago, campanhas e Landing Pages estratégicas com foco em resultado real.</p>
+          </div>
+          <div class="card services-preview__card">
+            <div class="card__accent" style="background:var(--green)"></div>
+            <div class="services-preview__card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path
+                  d="M9 19V6l12-3v13M9 19c0 1.1-1.3 2-3 2s-3-.9-3-2 1.3-2 3-2 3 .9 3 2zm12-3c0 1.1-1.3 2-3 2s-3-.9-3-2 1.3-2 3-2 3 .9 3 2z" />
+              </svg>
+            </div>
+            <h3 class="card__title">Design & Branding</h3>
+            <p class="card__text">Identidade visual, peças gráficas e publicações que elevam a percepção da sua marca.
+            </p>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:var(--space-xl)" class="reveal">
+          <a href="#/servicos" class="btn btn--outline" data-link>Ver Todos os Serviços →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exclusivity Number -->
+    <section class="exclusivity-home section section--dark">
+      <div class="container" style="text-align:center">
+        <p class="label label--light reveal">A Exclusividade</p>
+        <div class="reveal">
+          <div class="exclusivity-home__number">
+            <span class="exclusivity-home__number-value counter-animate" data-target="6">0</span>
+          </div>
+          <p class="exclusivity-home__label">clientes simultâneos. No máximo.</p>
+        </div>
+        <p class="exclusivity-home__text reveal">
+          Não aceitamos qualquer cliente. E nem você deveria aceitar qualquer agência.
+          Nosso limite existe para garantir que cada marca receba atenção total.
+        </p>
+        <a href="#/contato" class="btn btn--ghost" data-link>Garanta Sua Vaga</a>
+      </div>
+    </section>
+
+    <!-- Portfolio Preview -->
+    <section class="portfolio-preview section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="label">Portfólio</p>
+          <h2 class="section-header__title">Projetos que contam histórias</h2>
+        </div>
+      </div>
+      <div class="portfolio-preview__scroll" id="portfolioScroll">
+        <div class="portfolio-preview__item">
+          <div class="portfolio-preview__item-bg" style="background:linear-gradient(135deg,#2D1B2E,#5B2A4A,#C8506B)">
+          </div>
+          <div class="portfolio-preview__item-overlay">
+            <span class="portfolio-preview__item-category">Branding</span>
+            <span class="portfolio-preview__item-title">Estética Rosé</span>
+          </div>
+        </div>
+        <div class="portfolio-preview__item">
+          <div class="portfolio-preview__item-bg" style="background:linear-gradient(135deg,#1A2A3A,#2A4A5A,#7DB4D4)">
+          </div>
+          <div class="portfolio-preview__item-overlay">
+            <span class="portfolio-preview__item-category">Social Media</span>
+            <span class="portfolio-preview__item-title">Oceano Digital</span>
+          </div>
+        </div>
+        <div class="portfolio-preview__item">
+          <div class="portfolio-preview__item-bg" style="background:linear-gradient(135deg,#1A2E1A,#2A5A3A,#3A8B5C)">
+          </div>
+          <div class="portfolio-preview__item-overlay">
+            <span class="portfolio-preview__item-category">Landing Page</span>
+            <span class="portfolio-preview__item-title">Verde Orgânico</span>
+          </div>
+        </div>
+        <div class="portfolio-preview__item">
+          <div class="portfolio-preview__item-bg" style="background:linear-gradient(135deg,#2E2A1A,#5A4A2A,#E8944A)">
+          </div>
+          <div class="portfolio-preview__item-overlay">
+            <span class="portfolio-preview__item-category">Campanha</span>
+            <span class="portfolio-preview__item-title">Dourado Intenso</span>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:var(--space-xl)" class="reveal">
+        <a href="#/portfolio" class="btn btn--outline" data-link>Ver Portfólio Completo →</a>
+      </div>
+    </section>
+
+    <!-- Home CTA -->
+    <section class="home-cta section section--warm">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="label">Vamos Conversar?</p>
+          <h2 class="section-header__title">Pronto para ser tratado como <em>único</em>?</h2>
+          <p class="section-header__subtitle">
+            São apenas 6 vagas. Se você busca dedicação total para sua marca, estamos aqui.
+          </p>
+        </div>
+        <div class="home-cta__buttons reveal">
+          <a href="https://wa.me/5514991172412?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20ArtNec%C3%B4."
+            target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            WhatsApp
+          </a>
+          <a href="https://www.instagram.com/artnecodesign/" target="_blank" rel="noopener"
+            class="btn btn--instagram btn--lg">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       PAGE: SOBRE
+       ══════════════════════════════════════════════════════ -->
+  <main class="page" id="page-sobre" data-page="sobre">
+
+    <section class="about-hero section">
+      <div class="container">
+        <p class="label reveal">Quem Somos</p>
+        <h2 class="about-hero__title reveal">Somos a ArtNecô.<br>Atendemos poucos. Entregamos <em>arte</em>.</h2>
+        <p class="about-hero__subtitle reveal">Uma agência que escolheu a qualidade acima de tudo.</p>
+      </div>
+    </section>
+
+    <section class="timeline section">
+      <div class="section-header reveal">
+        <p class="label">Nossa Jornada</p>
+        <h2 class="section-header__title">De onde viemos</h2>
+      </div>
+      <div class="timeline__inner">
+        <div class="timeline__line"></div>
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__year">A Semente</span>
+            <h4>A inconformidade com o mercado</h4>
+            <p>Yasmim viu que o mercado de marketing tratava marcas como números em planilhas. Decidiu que havia um
+              caminho melhor.</p>
+          </div>
+        </div>
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__year">A Decisão</span>
+            <h4>Menos clientes, mais dedicação</h4>
+            <p>A ideia era simples e radical: atender poucos clientes, mas com uma qualidade que agências grandes jamais
+              conseguiriam entregar.</p>
+          </div>
+        </div>
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__year">O Nascimento</span>
+            <h4>Nasce a ArtNecô</h4>
+            <p>Com a filosofia de tratar cada marca como uma obra de arte, a ArtNecô ganha vida — sofisticada, exclusiva
+              e artesanal.</p>
+          </div>
+        </div>
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__year">O Presente</span>
+            <h4>Máximo de 6, sempre</h4>
+            <p>Hoje, a ArtNecô mantém seu compromisso: no máximo 6 clientes simultâneos para garantir dedicação total a
+              cada marca.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="philosophy section section--warm">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="label">Nossos Pilares</p>
+          <h2 class="section-header__title">O que nos guia</h2>
+        </div>
+        <div class="philosophy__grid stagger">
+          <div class="philosophy__item card">
+            <div class="philosophy__icon">✦</div>
+            <h4>Exclusividade</h4>
+            <p>Máximo de 6 clientes garante que sua marca receba atenção diária, não semanal.</p>
+          </div>
+          <div class="philosophy__item card">
+            <div class="philosophy__icon">✿</div>
+            <h4>Artesanalidade</h4>
+            <p>Cada peça é criada do zero, sem templates. Nada é genérico, tudo é intencional.</p>
+          </div>
+          <div class="philosophy__item card">
+            <div class="philosophy__icon">◈</div>
+            <h4>Resultado</h4>
+            <p>Não entregamos relatórios bonitos. Entregamos resultados que fazem diferença real.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="founder section">
+      <div class="container">
+        <div class="founder__grid">
+          <div class="founder__image reveal-left">
+            <div class="founder__image-frame">
+              <img src="./logoart.jpg" alt="ArtNecô">
+            </div>
+          </div>
+          <div class="founder__content">
+            <p class="label reveal">A Fundadora</p>
+            <h3 class="founder__name reveal">Yasmim Jiora Trombeli</h3>
+            <p class="founder__role reveal">Fundadora & Diretora Criativa</p>
+            <p class="founder__bio reveal">
+              Designer, esposa, mãe, criativa e muito batalhadora. Yasmim trouxe para a ArtNecô
+              a sofisticação e o bom gosto que a definem — transformando cada projeto em uma
+              expressão artística da marca de cada cliente.
+            </p>
+            <blockquote class="founder__quote reveal">
+              "Acredito que cada marca tem uma história única para contar.
+              Meu trabalho é transformar essa história em arte."
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comparison section section--dark">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="label label--light">O Diferencial</p>
+          <h2 class="section-header__title" style="color:var(--text-on-dark)">Por que somos diferentes</h2>
+        </div>
+        <div class="comparison__grid">
+          <div class="comparison__col comparison__col--traditional reveal-left">
+            <h4>Agência Tradicional</h4>
+            <ul class="comparison__list">
+              <li>40+ clientes simultâneos</li>
+              <li>Templates e fórmulas prontas</li>
+              <li>Estratégias recicladas</li>
+              <li>Atendimento semanal, no máximo</li>
+              <li>Posts genéricos em série</li>
+              <li>Relatórios bonitos, resultados vazios</li>
+            </ul>
+          </div>
+          <div class="comparison__vs">vs</div>
+          <div class="comparison__col comparison__col--artneco reveal-right">
+            <h4>ArtNecô</h4>
+            <ul class="comparison__list">
+              <li>Máximo de 6 clientes</li>
+              <li>Tudo criado do zero para você</li>
+              <li>Estratégia 100% personalizada</li>
+              <li>Dedicação diária à sua marca</li>
+              <li>Conteúdo artesanal e intencional</li>
+              <li>Resultados reais, mensuráveis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       PAGE: SERVIÇOS
+       ══════════════════════════════════════════════════════ -->
+  <main class="page" id="page-servicos" data-page="servicos">
+
+    <section class="services-hero section">
+      <div class="container">
+        <p class="label reveal">Nossos Serviços</p>
+        <h2 class="about-hero__title reveal">Um processo pensado para a <em>excelência</em></h2>
+        <p class="about-hero__subtitle reveal">Do primeiro contato ao resultado final, cada etapa é cuidadosamente
+          executada.</p>
+      </div>
+    </section>
+
+    <section class="process section section--warm">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="label">O Processo</p>
+          <h2 class="section-header__title">Como trabalhamos</h2>
+        </div>
+        <div class="process__steps stagger">
+          <div class="process__step active">
+            <div class="process__step-number">1</div>
+            <h4 class="process__step-title">Imersão</h4>
+            <p class="process__step-text">Mergulhamos no seu negócio para entender sua essência.</p>
+          </div>
+          <div class="process__step">
+            <div class="process__step-number">2</div>
+            <h4 class="process__step-title">Estratégia</h4>
+            <p class="process__step-text">Criamos um plano sob medida para seus objetivos.</p>
+          </div>
+          <div class="process__step">
+            <div class="process__step-number">3</div>
+            <h4 class="process__step-title">Criação</h4>
+            <p class="process__step-text">Produzimos cada peça com cuidado artesanal.</p>
+          </div>
+          <div class="process__step">
+            <div class="process__step-number">4</div>
+            <h4 class="process__step-title">Gestão</h4>
+            <p class="process__step-text">Publicamos, gerenciamos e otimizamos tudo.</p>
+          </div>
+          <div class="process__step">
+            <div class="process__step-number">5</div>
+            <h4 class="process__step-title">Resultados</h4>
+            <p class="process__step-text">Medimos, ajustamos e entregamos ROI real.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-details section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="label">Detalhes</p>
+          <h2 class="section-header__title">O que está incluído</h2>
+        </div>
+        <div class="service-details__grid stagger">
+          <div class="service-card">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <path d="M21 15l-5-5L5 21" />
+              </svg></div>
+            <h4 class="service-card__title">Captação & Edição</h4>
+            <p class="service-card__text">Fotografia, vídeo e edição profissional para criar conteúdo visual que
+              impressiona.</p>
+            <ul class="service-card__includes">
+              <li>Sessões fotográficas dirigidas</li>
+              <li>Edição de vídeo e reels</li>
+              <li>Tratamento de imagem premium</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <path d="M12 20h9" />
+                <path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
+              </svg></div>
+            <h4 class="service-card__title">Conteúdo & Publicação</h4>
+            <p class="service-card__text">Criação de conteúdo estratégico com calendário editorial personalizado.</p>
+            <ul class="service-card__includes">
+              <li>Planejamento de conteúdo mensal</li>
+              <li>Copywriting para posts e stories</li>
+              <li>Publicação e gestão de redes</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg></div>
+            <h4 class="service-card__title">Tráfego Pago</h4>
+            <p class="service-card__text">Campanhas inteligentes no Meta Ads e Google Ads com foco em conversão.</p>
+            <ul class="service-card__includes">
+              <li>Setup e otimização de campanhas</li>
+              <li>Segmentação avançada de público</li>
+              <li>Relatórios de performance reais</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg></div>
+            <h4 class="service-card__title">Landing Pages</h4>
+            <p class="service-card__text">Páginas de alta conversão desenhadas para cada campanha ou oferta.</p>
+            <ul class="service-card__includes">
+              <li>Design e desenvolvimento sob medida</li>
+              <li>Otimização para conversão</li>
+              <li>Integração com CRM e analytics</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+                <line x1="4" y1="22" x2="4" y2="15" />
+              </svg></div>
+            <h4 class="service-card__title">Campanhas</h4>
+            <p class="service-card__text">Campanhas sazonais e promocionais completas, do conceito à execução.</p>
+            <ul class="service-card__includes">
+              <li>Conceito criativo personalizado</li>
+              <li>Peças visuais e copy</li>
+              <li>Gestão e monitoramento</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z" />
+                <line x1="16" y1="8" x2="2" y2="22" />
+                <line x1="17.5" y1="15" x2="9" y2="15" />
+              </svg></div>
+            <h4 class="service-card__title">Design & Branding</h4>
+            <p class="service-card__text">Identidade visual completa e peças gráficas que elevam a percepção da marca.
+            </p>
+            <ul class="service-card__includes">
+              <li>Identidade visual e manual de marca</li>
+              <li>Peças para redes e impressos</li>
+              <li>Embalagens e materiais especiais</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section section--warm">
+      <div class="faq__inner">
+        <div class="section-header reveal">
+          <p class="label">Dúvidas Frequentes</p>
+          <h2 class="section-header__title">Perguntas comuns</h2>
+        </div>
+        <div class="accordion" id="serviceFaq">
+          <div class="accordion__item">
+            <button class="accordion__trigger">Como funciona o processo de entrada?<span
+                class="accordion__icon"></span></button>
+            <div class="accordion__content">
+              <div class="accordion__content-inner">Tudo começa com uma conversa. Queremos entender sua marca, seus
+                objetivos e seu momento. Se houver fit dos dois lados, iniciamos a imersão e criamos um plano sob
+                medida.</div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Vocês trabalham com contrato?<span
+                class="accordion__icon"></span></button>
+            <div class="accordion__content">
+              <div class="accordion__content-inner">Sim, trabalhamos com contratos de no mínimo 3 meses. Isso nos
+                permite realmente entender sua marca e criar uma estratégia consistente que gera resultado.</div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">E se todas as vagas estiverem ocupadas?<span
+                class="accordion__icon"></span></button>
+            <div class="accordion__content">
+              <div class="accordion__content-inner">Quando atingimos nosso limite de 6 clientes, abrimos uma lista de
+                espera. Assim que uma vaga abre, entramos em contato com você para iniciar o processo.</div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Qual o investimento médio?<span class="accordion__icon"></span></button>
+            <div class="accordion__content">
+              <div class="accordion__content-inner">O investimento varia de acordo com o escopo e as necessidades da sua
+                marca. Entre em contato para recebermos um briefing e montarmos uma proposta personalizada.</div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Atendem qualquer tipo de negócio?<span
+                class="accordion__icon"></span></button>
+            <div class="accordion__content">
+              <div class="accordion__content-inner">Selecionamos cuidadosamente os projetos que assumimos. Buscamos
+                marcas que valorizam qualidade, autenticidade e estão dispostas a investir em um trabalho premium.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       PAGE: PORTFÓLIO
+       ══════════════════════════════════════════════════════ -->
+  <main class="page" id="page-portfolio" data-page="portfolio">
+
+    <section class="portfolio-hero section">
+      <div class="container">
+        <p class="label reveal">Portfólio</p>
+        <h2 class="about-hero__title reveal">Cada projeto é uma <em>obra de arte</em></h2>
+        <p class="about-hero__subtitle reveal">Conheça alguns dos nossos trabalhos conceituais</p>
+      </div>
+    </section>
+
+    <section class="portfolio-grid">
+      <div class="portfolio-grid__inner stagger">
+        <div class="portfolio-card">
+          <div class="portfolio-card__bg" style="background:linear-gradient(135deg,#2D1B2E,#5B2A4A,#C8506B)"></div>
+          <div class="portfolio-card__overlay">
+            <span class="portfolio-card__category">Branding Completo</span>
+            <h3 class="portfolio-card__title">Estética Rosé</h3>
+            <p class="portfolio-card__desc">Identidade visual, redes sociais e campanha de lançamento para uma marca de
+              cosméticos artesanais.</p>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card__bg" style="background:linear-gradient(135deg,#1A2A3A,#2A4A5A,#7DB4D4)"></div>
+          <div class="portfolio-card__overlay">
+            <span class="portfolio-card__category">Social Media</span>
+            <h3 class="portfolio-card__title">Oceano Digital</h3>
+            <p class="portfolio-card__desc">Gestão completa de redes sociais com conteúdo editorial premium para clínica
+              de estética.</p>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card__bg" style="background:linear-gradient(135deg,#1A2E1A,#2A5A3A,#3A8B5C)"></div>
+          <div class="portfolio-card__overlay">
+            <span class="portfolio-card__category">Landing Page + Campanha</span>
+            <h3 class="portfolio-card__title">Verde Orgânico</h3>
+            <p class="portfolio-card__desc">Landing page de alta conversão e campanha de tráfego pago para loja de
+              produtos naturais.</p>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card__bg" style="background:linear-gradient(135deg,#2E2A1A,#5A4A2A,#E8944A)"></div>
+          <div class="portfolio-card__overlay">
+            <span class="portfolio-card__category">Campanha Sazonal</span>
+            <h3 class="portfolio-card__title">Dourado Intenso</h3>
+            <p class="portfolio-card__desc">Campanha completa de fim de ano para joalheria premium, incluindo conteúdo,
+              tráfego e landing page.</p>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card__bg" style="background:linear-gradient(135deg,#1A1A2E,#3A2A5A,#A63D4E)"></div>
+          <div class="portfolio-card__overlay">
+            <span class="portfolio-card__category">Redesign de Marca</span>
+            <h3 class="portfolio-card__title">Veludo Noturno</h3>
+            <p class="portfolio-card__desc">Renovação completa de identidade visual e presença digital para restaurante
+              sofisticado.</p>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card__bg" style="background:linear-gradient(135deg,#2E1A2A,#5A2A5A,#D96B8A)"></div>
+          <div class="portfolio-card__overlay">
+            <span class="portfolio-card__category">Conteúdo Premium</span>
+            <h3 class="portfolio-card__title">Fleur de Luxe</h3>
+            <p class="portfolio-card__desc">Produção de conteúdo editorial e fotografias para marca de moda feminina
+              sofisticada.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-note">
+      <p>✦ Projetos conceituais que demonstram nossa abordagem e estilo criativo.</p>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       PAGE: CONTATO
+       ══════════════════════════════════════════════════════ -->
+  <main class="page" id="page-contato" data-page="contato">
+
+    <section class="contact-hero">
+      <div class="orb" style="width:500px;height:500px;background:var(--rose);top:-200px;left:-200px"></div>
+      <div class="orb" style="width:400px;height:400px;background:var(--blue);bottom:-150px;right:-150px"></div>
+      <div class="container" style="position:relative;z-index:2">
+        <p class="label label--light reveal">Vamos Conversar?</p>
+        <h2 class="reveal">Quer ser um dos <em>6</em>?</h2>
+        <p class="contact-hero__subtitle reveal">
+          Se você busca uma agência que realmente se dedique à sua marca, estamos aqui.
+        </p>
+      </div>
+      <div class="vacancy" style="position:relative;z-index:2">
+        <p class="vacancy__status reveal"><strong>4</strong> de 6 vagas preenchidas</p>
+        <div class="vacancy-bar reveal">
+          <div class="vacancy-bar__fill" style="--fill:66%"></div>
+        </div>
+        <p class="vacancy__text reveal">Restam 2 vagas para novos clientes</p>
+      </div>
+    </section>
+
+    <section class="contact-buttons section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="label">Entre em Contato</p>
+          <h2 class="section-header__title">Escolha seu canal preferido</h2>
+        </div>
+        <div class="contact-buttons__grid stagger">
+          <a href="https://wa.me/5514991172412?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20ArtNec%C3%B4."
+            target="_blank" rel="noopener" class="contact-channel">
+            <div class="contact-channel__icon contact-channel__icon--whatsapp">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </div>
+            <span class="contact-channel__name">WhatsApp</span>
+            <span class="contact-channel__info">(14) 99117-2412</span>
+          </a>
+          <a href="https://www.instagram.com/artnecodesign/" target="_blank" rel="noopener" class="contact-channel">
+            <div class="contact-channel__icon contact-channel__icon--instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </div>
+            <span class="contact-channel__name">Instagram</span>
+            <span class="contact-channel__info">@artnecodesign</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-faq section section--warm">
+      <div class="contact-faq__inner">
+        <div class="section-header reveal">
+          <p class="label">Dúvidas</p>
+          <h2 class="section-header__title">Antes de nos chamar</h2>
+        </div>
+        <div class="accordion" id="contactFaq">
+          <div class="accordion__item">
+            <button class="accordion__trigger">Qual o prazo para começar?<span class="accordion__icon"></span></button>
+            <div class="accordion__content">
+              <div class="accordion__content-inner">Após a confirmação, a fase de imersão inicia em até 5 dias úteis. Os
+                primeiros resultados começam a surgir em 2-3 semanas.</div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Posso ver resultados de outros clientes?<span
+                class="accordion__icon"></span></button>
+            <div class="accordion__content">
+              <div class="accordion__content-inner">Sim! Na nossa conversa inicial compartilhamos cases e resultados de
+                clientes anteriores (com devida autorização). O sigilo é algo que levamos muito a sério.</div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Qual a melhor forma de entrar em contato?<span
+                class="accordion__icon"></span></button>
+            <div class="accordion__content">
+              <div class="accordion__content-inner">WhatsApp é o caminho mais rápido. Responderemos em até 24 horas.
+                Também estamos disponíveis pelo Instagram DM.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer__inner">
+      <img src="./logoart.jpg" alt="ArtNecô" class="footer__logo">
+      <div class="footer__links">
+        <a href="#/" class="footer__link" data-link>Início</a>
+        <a href="#/sobre" class="footer__link" data-link>Sobre</a>
+        <a href="#/servicos" class="footer__link" data-link>Serviços</a>
+        <a href="#/portfolio" class="footer__link" data-link>Portfólio</a>
+        <a href="#/contato" class="footer__link" data-link>Contato</a>
+      </div>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/artnecodesign/" target="_blank" rel="noopener" class="footer__social-link"
+          aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+        </a>
+        <a href="https://wa.me/5514991172412" target="_blank" rel="noopener" class="footer__social-link"
+          aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+        </a>
+      </div>
+      <div class="footer__divider"></div>
+      <p class="footer__text">© 2025 ArtNecô Studio de Design. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/router.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
