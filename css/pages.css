@@ -295,11 +295,12 @@
 .portfolio-preview__scroll {
     display: flex;
     gap: var(--space-lg);
+    max-width: var(--max-w-wide);
+    margin: 0 auto;
     padding: var(--space-sm) var(--side-padding);
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    justify-content: center;
+    flex-wrap: wrap;
     scrollbar-width: none;
-    cursor: grab;
 }
 
 .portfolio-preview__scroll::-webkit-scrollbar {

@@ -28,6 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        // Handle nav dark-page class for pages with dark hero sections
+        const nav = document.getElementById('nav');
+        if (nav) {
+            if (pageId === 'contato') {
+                nav.classList.add('dark-page');
+            } else {
+                nav.classList.remove('dark-page');
+            }
+        }
+
         // Scroll to top on page change
         window.scrollTo({
             top: 0,

@@ -130,7 +130,7 @@ class ScrollAnimations {
             }
 
             // Check if on dark section
-            const darkSections = document.querySelectorAll('.section--dark');
+            const darkSections = document.querySelectorAll('.section--dark, .contact-hero');
             let onDark = false;
 
             darkSections.forEach(section => {

@@ -75,6 +75,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    /* ── Accordion ── */
+    document.querySelectorAll('.accordion__trigger').forEach(trigger => {
+        trigger.addEventListener('click', () => {
+            const item = trigger.parentElement;
+            const content = item.querySelector('.accordion__content');
+            const accordion = item.parentElement;
+
+            // Close other items in the same accordion
+            accordion.querySelectorAll('.accordion__item').forEach(other => {
+                if (other !== item && other.classList.contains('open')) {
+                    other.classList.remove('open');
+                    other.querySelector('.accordion__content').style.maxHeight = null;
+                }
+            });
+
+            // Toggle current item
+            item.classList.toggle('open');
+            if (item.classList.contains('open')) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+                content.style.maxHeight = null;
+            }
+        });
+    });
+
     /* ── Active nav link highlight ── */
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav__link');
